@@ -1,3 +1,5 @@
-import {loadContent} from './homeload';
+import {loadHome} from './homeload';
+import { loadMenu } from './menuload';
+import { loadContact } from './contactload';
 
-window.onload(loadContent());
+window.onload(loadHome());
