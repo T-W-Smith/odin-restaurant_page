@@ -7,11 +7,8 @@ function loadHome() {
     const infoText = document.createElement('p');
 
     mainImage.src = Img;
-    // mainImage.src = '/src/tavern.jpg';
-    // mainImage.style.width = '500px';
-    // mainImage.style.height = '250px';
 
-    headline.innerHTML = "Welcome to Feathers Tavern"
+    headline.innerHTML = "Welcome to Feathers Tavern";
     infoText.innerHTML = "Nestled in the heart of the bustling city, the newly opened Feathers Tavern " +
                          "beckons weary travelers and locals alike with its inviting ambiance and " +
                          "tantalizing array of culinary delights. Whether you're seeking a cozy spot for " +
@@ -19,10 +16,10 @@ function loadHome() {
                          "from the bustling city streets, Feathers Tavern promises to deliver an experience " +
                          "that transcends the typical tavern fare, inviting you to savor the pleasures of " +
                          "fine food, expertly mixed drinks, and convivial company in an atmosphere of refined " +
-                         "rustic elegance."
+                         "rustic elegance.";
 
-    div.appendChild(mainImage);
     div.appendChild(headline);
+    div.appendChild(mainImage);
     div.appendChild(infoText);
 }
 

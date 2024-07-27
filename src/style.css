@@ -1,0 +1,35 @@
+/* 606c38 - lighter green*/
+/* 283618 - darker green*/
+/* fefae0 - whiteish*/
+/* dda15e - lighter peach*/
+/* bc6c25 - darker peach*/
+
+body{
+    background-color: #dda15e;
+}
+
+img {
+    padding-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    font-size: medium;
+    background-color: #606c38;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

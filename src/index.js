@@ -1,6 +1,7 @@
 import {loadHome} from './homeload';
 import {loadMenu} from './menuload';
 import {loadContact} from './contactload';
+import './style.css';
 
 window.onload = loadHome();
 
