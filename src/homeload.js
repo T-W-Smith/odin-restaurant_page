@@ -1,12 +1,15 @@
+import Img from './tavern.jpg'
+
 function loadHome() {
     const div = document.getElementById('content');
-    let mainImage = document.createElement('img');
-    let headline = document.createElement('h1');
-    let infoText = document.createElement('p');
+    const mainImage = new Image(500, 250);
+    const headline = document.createElement('h1');
+    const infoText = document.createElement('p');
 
-    mainImage.src = '/src/tavern.jpg';
-    mainImage.style.width = '500px';
-    mainImage.style.height = '250px';
+    mainImage.src = Img;
+    // mainImage.src = '/src/tavern.jpg';
+    // mainImage.style.width = '500px';
+    // mainImage.style.height = '250px';
 
     headline.innerHTML = "Welcome to Feathers Tavern"
     infoText.innerHTML = "Nestled in the heart of the bustling city, the newly opened Feathers Tavern " +
