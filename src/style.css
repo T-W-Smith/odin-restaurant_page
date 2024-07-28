@@ -4,7 +4,20 @@
 /* dda15e - lighter peach*/
 /* bc6c25 - darker peach*/
 
-body{
+@font-face {
+    font-family: 'Yatra One';
+    src: url('./YatraOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yatra One';
+}
+
+body {
     background-color: #dda15e;
 }
 
