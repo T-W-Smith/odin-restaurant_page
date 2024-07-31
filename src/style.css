@@ -23,12 +23,16 @@ body {
 
 img {
     padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #606c38;
+    border-radius: 10px;
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    margin: 10px 10px 10px 0px;
 }
 
 button {
