@@ -1,13 +1,26 @@
+function createContact() {
+    const contact = document.createElement('div');
+    contact.classList.add("contact");
+
+    const number = document.createElement('p');
+    number.textContent = "(123)-456-7890";
+
+    const email = document.createElement('p');
+    email.textContent = "feathers@tavern.com";
+
+    const address = document.createElement('p');
+    address.textContent = "123 Jasper Lakes Rd., Babble, North Carolina 30684";
+
+    contact.appendChild(number);
+    contact.appendChild(email);
+    contact.appendChild(address);
+
+    return contact;
+}
+
 function loadContact() {
-    const div = document.getElementById('content');
-    let headline = document.createElement('h1');
-    let infoText = document.createElement('p');
-
-    headline.innerHTML = "Contact";
-    infoText.innerHTML = "Call us!";
-
-    div.appendChild(headline);
-    div.appendChild(infoText);
+    const content = document.getElementById('content');
+    content.appendChild(createContact());
 }
 
 export {loadContact};
