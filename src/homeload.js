@@ -1,15 +1,17 @@
 import Img from './tavern.jpg'
 
-function loadHome() {
-    const div = document.getElementById('content');
-    const mainImage = new Image(500, 250);
-    const headline = document.createElement('h1');
-    const infoText = document.createElement('p');
+function createHome() {
+    const home = document.createElement('div');
+    home.classList.add("home");
 
+    const mainImage = new Image(500, 250);
     mainImage.src = Img;
 
-    headline.innerHTML = "Welcome to Feathers Tavern";
-    infoText.innerHTML = "Nestled in the heart of the bustling city, the newly opened Feathers Tavern " +
+    const headline = document.createElement('h1');
+    headline.textContent = "Welcome to Feathers Tavern";
+
+    const infoText = document.createElement('p');
+    infoText.textContent = "Nestled in the heart of the bustling city, the newly opened Feathers Tavern " +
                          "beckons weary travelers and locals alike with its inviting ambiance and " +
                          "tantalizing array of culinary delights. Whether you're seeking a cozy spot for " +
                          "an intimate gathering, a lively hub for post-work revelry, or simply a respite " +
@@ -18,9 +20,16 @@ function loadHome() {
                          "fine food, expertly mixed drinks, and convivial company in an atmosphere of refined " +
                          "rustic elegance.";
 
-    div.appendChild(headline);
-    div.appendChild(mainImage);
-    div.appendChild(infoText);
+    content.appendChild(headline);
+    content.appendChild(mainImage);
+    content.appendChild(infoText);
+
+    return home;
+}
+
+function loadHome() {
+    const content = document.getElementById('content');
+    content.appendChild(createHome());
 }
 
 export {loadHome};
