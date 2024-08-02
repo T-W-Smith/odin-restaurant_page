@@ -2,6 +2,10 @@ function createContact() {
     const contact = document.createElement('div');
     contact.classList.add("contact");
 
+    const headline = document.createElement('h1');
+    headline.textContent = "Contact Us";
+    contact.appendChild(headline);
+
     const number = document.createElement('p');
     number.textContent = "(123)-456-7890";
 
