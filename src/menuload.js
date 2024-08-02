@@ -28,14 +28,14 @@ function createMenu() {
     );
     menu.appendChild(
         createMenuItem(
-            "cheeseburger Mac",
+            "Cheeseburger Mac",
             "Feather's deconstructs America's favorite sandwich and " + 
             "transforms it into a delicious mac and cheese with savory " + 
             "ground beef, topped with crispy bacon, diced tomato and " + 
             "chopped pickle"
         )
     );
-
+    
     const sides = document.createElement('h2');
     sides.textContent = "Sides";
     menu.appendChild(sides);
