@@ -63,6 +63,8 @@ button {
 }
 
 .footer img {
+    content: url('./github-mark.png');
+    zoom: 10%;
     width: 25px;
     height: auto;
     margin-left: 5px;
