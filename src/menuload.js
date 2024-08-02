@@ -1,3 +1,4 @@
+// Creates the menu page
 function createMenu() {
     const menu = document.createElement('div');
     menu.classList.add("menu");
@@ -10,6 +11,7 @@ function createMenu() {
     mainDishes.textContent = "Main Dishes";
     menu.appendChild(mainDishes);
 
+    // All the different menu items
     menu.appendChild(
         createMenuItem(
             "Herbed Chicken",
@@ -107,6 +109,7 @@ function createMenu() {
     return menu;
 }
 
+// Creates each menu item
 function createMenuItem(name, description) {
     const menuItem = document.createElement('div');
     menuItem.classList.add("menu-item");
@@ -123,9 +126,11 @@ function createMenuItem(name, description) {
     return menuItem;
 }
 
+// Loads menu page
 function loadMenu() {
     const content = document.getElementById('content');
     content.appendChild(createMenu());
 }
 
+// Exports the loadMenu function
 export {loadMenu};

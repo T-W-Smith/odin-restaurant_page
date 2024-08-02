@@ -1,3 +1,4 @@
+// Creates the contact page
 function createContact() {
     const contact = document.createElement('div');
     contact.classList.add("contact");
@@ -22,9 +23,11 @@ function createContact() {
     return contact;
 }
 
+// Loads the contact page
 function loadContact() {
     const content = document.getElementById('content');
     content.appendChild(createContact());
 }
 
+// Exports the loadContact function
 export {loadContact};

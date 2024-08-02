@@ -4,6 +4,7 @@
 /* dda15e - lighter peach*/
 /* bc6c25 - darker peach*/
 
+/* Font Import */
 @font-face {
     font-family: 'Yatra One';
     src: url('./YatraOne-Regular.ttf') format('truetype');
@@ -28,6 +29,7 @@ body {
     height: 100%;
 }
 
+/* Nav */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -44,6 +46,7 @@ button {
     background-color: #606c38;
 }
 
+/* Main */
 #content {
     display: flex;
     flex-direction: column;
@@ -66,6 +69,7 @@ button {
     margin-right: 5px;
 }
 
+/* Home Page */
 .home h1, .home img, .home p {
     margin-top: 25px;
 }
@@ -81,6 +85,7 @@ button {
     border-radius: 10px;
 }
 
+/* Menu Page */
 .menu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, .75fr));

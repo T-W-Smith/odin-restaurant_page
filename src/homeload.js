@@ -1,5 +1,7 @@
+// Imports the tavern image into the home page
 import Img from './tavern.jpg'
 
+// Creates the home page
 function createHome() {
     const home = document.createElement('div');
     home.classList.add("home");
@@ -27,9 +29,11 @@ function createHome() {
     return home;
 }
 
+// Loads the home page
 function loadHome() {
     const content = document.getElementById('content');
     content.appendChild(createHome());
 }
 
+// Exports the loadHome function
 export {loadHome};
