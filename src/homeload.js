@@ -20,9 +20,9 @@ function createHome() {
                          "fine food, expertly mixed drinks, and convivial company in an atmosphere of refined " +
                          "rustic elegance.";
 
-    content.appendChild(headline);
-    content.appendChild(mainImage);
-    content.appendChild(infoText);
+    home.appendChild(headline);
+    home.appendChild(mainImage);
+    home.appendChild(infoText);
 
     return home;
 }
